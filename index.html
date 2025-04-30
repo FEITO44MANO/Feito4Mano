@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Feito a Mano</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+<style>
+/* Reset and base styles */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: 'EB Garamond', serif;
+background-color: #fff6e5;
+background-image: url('https://www.transparenttextures.com/patterns/gingham.png');
+background-size: 200px;
+color: #2c1b12;
+overflow-x: hidden;
+}
+
+/* Navigation */
+nav {
+background-color: #e23727;
+padding: 1rem 2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+nav h1 {
+font-family: 'Copperplate', 'Copper Black', serif;
+color: yellow;
+font-size: 2rem;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+gap: 2rem;
+}
+
+nav ul li a {
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+}
+
+/* Loading screen */
+#loading {
+position: fixed;
+width: 100vw;
+height: 100vh;
+background-color: #fff0e2;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 9999;
+}
+
+#loading img {
+width: 100px;
+height: 100px;
+animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+
+/* Main content */
+.content {
+padding: 4rem 2rem;
+max-width: 1000px;
+margin: auto;
+}
+
+h2 {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+}
+
+.cherry {
+width: 80px;
+height: auto;
+animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+0%, 100% {
+transform: translateY(0);
+}
+50% {
+transform: translateY(-20px);
+}
+}
+
+.section {
+margin-bottom: 3rem;
+}
+
+.section p {
+font-size: 1.2rem;
+line-height: 1.6;
+margin-top: 1rem;
+}
+
+footer {
+background-color: #e23727;
+color: #fff;
+text-align: center;
+padding: 1rem;
+}
+
+</style>
+</head>
+<body>
+<!-- Loading Screen -->
+<div id="loading">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Billard_Ball_black_8.svg/800px-Billard_Ball_black_8.svg.png" alt="8 ball loading">
+</div>
+
+<!-- Navigation -->
+<nav>
+<h1>Feito a Mano</h1>
+<ul>
+<li><a href="#contact">Contact</a></li>
+<li><a href="#made">Feito a Mano - Made by hand</a></li>
+<li><a href="#fam">F.A.M</a></li>
+<li><a href="#mano">Mano</a></li>
+</ul>
+</nav>
+
+<!-- Main Content -->
+<div class="content">
+<section id="made" class="section">
+<img src="https://i.imgur.com/k7Y6m3d.png" alt="Cherry Icon" class="cherry" />
+<h2>Feito a Mano - Made by hand</h2>
+<p>This brand is all about handcrafted charm with vintage Americana flair, textured like old film with cozy claymation-style warmth. Inspired by diners, Wes Anderson tones, gingham patterns, and a tomato-palette, Feito a Mano celebrates uniqueness and storytelling in every piece.</p>
+</section>
+
+<section id="fam" class="section">
+<h2>F.A.M</h2>
+<p>F.A.M stands for the community, the spirit of slow craft, and the love behind every design. Whether it's a cherry motif or fine-line tattoo-style drawings, each item is touched with warmth and intention.</p>
+</section>
+
+<section id="mano" class="section">
+<h2>Mano</h2>
+<p>Mano represents the hand that builds, creates, draws, paints, and dreams. This section will highlight behind-the-scenes images and sketches that reflect the journey of handmade work.</p>
+</section>
+
+<section id="contact" class="section">
+<h2>Contact</h2>
+<p>For commissions, custom pieces, or collaboration, reach out at <a href="mailto:feitoamano@email.com">feitoamano@email.com</a> or DM on Instagram @feitoamano.co</p>
+</section>
+</div>
+
+<!-- Footer -->
+<footer>
+<p>&copy; 2025 Feito a Mano. All rights reserved.</p>
+</footer>
+
+<!-- JS for loading -->
+<script>
+window.addEventListener("load", function () {
+const loader = document.getElementById("loading");
+loader.style.display = "none";
+});
+</script>
+</body>
+</html>
